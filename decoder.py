@@ -11,7 +11,7 @@ def encoder(oldVar):
             newVar += "2"
     return newVar
 
-def decoder(password):
+def decoder(password):#Samir Saldanha
     thing = ''
     for i in password:
         if int(i) > 2:
