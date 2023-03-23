@@ -10,7 +10,18 @@ def encoder(oldVar):
         elif int(oldVar[i]) == 9:
             newVar += "2"
         return newVar
-
+def decoder(password):#Samir Saldanha
+    thing = ''
+    for i in password:
+        if int(i) > 2:
+            thing += str(int(i)-3)
+        elif i == '2':
+            thing += '9'
+        elif i == '1':
+            thing+= '8'
+        elif i == '0':
+            thing += '7'
+    return thing
 
 if __name__ == '__main__':
     endvar = True
